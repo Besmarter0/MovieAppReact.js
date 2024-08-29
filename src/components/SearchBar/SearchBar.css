@@ -1,0 +1,150 @@
+/* .SearchBar {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap to the next line 
+  gap: 10px;
+  margin: 20px 10rem;
+  padding: 20px;
+  background-color: #f0f0f0;
+
+  margin-bottom: 20px;
+
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-input,
+.search-select,
+.search-checkbox,
+.search-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  flex: 1 1 100%; 
+  box-sizing: border-box; 
+}
+
+.search-input {
+  flex-grow: 2; /* Make the input field take more space 
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1 1 auto;
+}
+
+.search-button {
+  background-color: var(--accent-200);
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex: 1 1 auto; /* Make button grow with content and shrink on smaller screens 
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+/* Media query for larger screens 
+@media (min-width: 600px) {
+  .search-input {
+    width: 20%;
+  }
+  .search-input,
+  .search-select,
+  .search-checkbox,
+  .search-button {
+    flex: 0 1 auto; /* Allow elements to return to natural size on larger screens 
+  }
+
+  .SearchBar {
+    justify-content: space-between; 
+  }
+
+  .search-input {
+    flex-grow: 1;
+  }
+} */
+
+.SearchBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; /* Limit width */
+  margin: 20px auto; /* Center horizontally */
+  padding: 15px 20px; /* Inner padding */
+  background-color: var(--background-200);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input,
+.search-select {
+  flex: 1;
+  min-width: 120px; /* Minimum width for input fields */
+  max-width: 180px; /* Maximum width to keep layout consistent */
+  margin: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--primary-200);
+  border-radius: 4px;
+  background-color: var(--background-100);
+  color: var(--text-100);
+  transition: border-color 0.3s;
+}
+
+.search-input:focus,
+.search-select:focus {
+  border-color: var(--primary-100);
+  outline: none;
+}
+
+.search-button {
+  flex: 1;
+  min-width: 120px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-100);
+  color: var(--text-100);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: var(--primary-200);
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: var(--text-100);
+}
+
+.search-checkbox {
+  margin-right: 8px;
+  accent-color: var(--primary-100);
+}
+
+@media (max-width: 768px) {
+  .SearchBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input,
+  .search-select,
+  .search-button {
+    width: 80%;
+    max-width: none;
+    margin: 5px 0;
+  }
+}

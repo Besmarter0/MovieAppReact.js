@@ -1,0 +1,25 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-100); /* Use your primary color */
+  color: var(--text-100); /* Use your text color */
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0.8;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    right: 10px;
+    bottom: 10px;
+    padding: 8px 12px;
+  }
+}

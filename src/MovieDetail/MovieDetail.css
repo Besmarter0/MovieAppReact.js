@@ -1,0 +1,36 @@
+
+.MainConatiner{
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), var(--background-300));
+ width: 80%;
+ margin: auto;
+}
+.Main {
+  width: 80%;
+  margin: auto;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.DetailsSection{
+  display: 'flex';
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+
+}
+
+.torrentDownload {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-grow: inherit;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.

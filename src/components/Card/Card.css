@@ -1,0 +1,129 @@
+/* .Card {
+  background-color: var(--background-300);
+  width: 230px;
+
+  height: 345px;
+}
+
+.infoCard {
+  padding: 0px;
+  color: var(--text-200);
+  width: 100%;
+  background-color: black;
+  margin: -68% 0 0 0 !important;
+  display: none;
+  z-index: 1;
+}
+
+.infoCard h2 {
+  padding: 3px;
+  margin: 0px;
+}
+.infoCard p {
+  padding: 3px;
+  margin: 3px 10px;
+  border-radius: 10px;
+  width: 50px;
+  
+  background-color: var(--primary-100);
+  border: 2px solid var(--primary-300);
+}
+.infoCard .Rating_year {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card:hover .infoCard {
+  display: inline;
+} */
+
+.Card {
+  background-color: var(--background-300);
+  width: 230px;
+  height: 345px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; /* Make Card the positioning reference */
+  overflow: hidden; /* Ensure contents don’t overflow out of the card */
+}
+
+.infoCard {
+  padding: 0px;
+  color: var(--text-200);
+  width: 100%;
+  background-color: var(--background-200);
+  position: absolute; /* Position relative to Card */
+  bottom: 0; /* Align to the bottom of the card */
+  left: 0;
+  margin: 0; /* Reset margins */
+  z-index: 1;
+  display: block; /* Changed from none to block for animation handling */
+  opacity: 0; /* Start with opacity 0 for fade-in effect */
+  transform: translateY(10px); /* Start slightly below the position */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition settings */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.19);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.infoCard h3 {
+  padding: 3px 5px;
+  margin: 0px;
+}
+
+.infoCard p {
+  padding: 2px;
+  margin: 3px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  /* width: 1rem; */
+
+  background-color: var(--primary-100);
+  border: 2px solid var(--accent-100);
+}
+
+.infoCard .Rating_year {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card:hover .infoCard {
+  opacity: 1; /* Fade in to full opacity */
+  transform: translateY(0); /* Slide into original position */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .Card {
+    width: 180px; /* Reduce width for tablets and smaller screens */
+    height: 270px; /* Adjust height proportionally */
+  }
+
+  .infoCard p {
+    width: 40px; /* Adjust the width of paragraph boxes */
+  }
+}
+
+@media (max-width: 480px) {
+  .Card {
+    width: 150px; /* Further reduce width for mobile phones */
+    height: 230px; /* Adjust height for smaller screens */
+  }
+
+  .infoCard h2 {
+    font-size: 14px; /* Adjust heading font size for readability */
+  }
+
+  .infoCard p {
+    font-size: 12px; /* Adjust paragraph font size for smaller screens */
+    width: 35px; /* Further adjust width of paragraph boxes */
+  }
+}
