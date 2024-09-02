@@ -1,6 +1,7 @@
 {
-  "name": "vite-react-starter",
+  "name": "moviesapp",
   "private": true,
+  "homepage": "https://besmarter0.github.io/moviesapp/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
