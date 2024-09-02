@@ -14,7 +14,7 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy1'
 
 # replace <USERNAME> with your GitHub username and <REPO> with the repository name
 git push -f git@github.com:besmarter0/moviesapp.git master:gh-pages

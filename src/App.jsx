@@ -56,7 +56,7 @@ function App() {
         <Route path="/movies/:movieId" element={<MovieDetail />} />
       </Routes>
     </Router>
-  );
+  );d
 }
 
 export default App;
