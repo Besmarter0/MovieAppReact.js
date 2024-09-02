@@ -1,100 +1,66 @@
-/* .Card {
-  background-color: var(--background-300);
-  width: 230px;
-
-  height: 345px;
-}
-
-.infoCard {
-  padding: 0px;
-  color: var(--text-200);
-  width: 100%;
-  background-color: black;
-  margin: -68% 0 0 0 !important;
-  display: none;
-  z-index: 1;
-}
-
-.infoCard h2 {
-  padding: 3px;
-  margin: 0px;
-}
-.infoCard p {
-  padding: 3px;
-  margin: 3px 10px;
-  border-radius: 10px;
-  width: 50px;
-  
-  background-color: var(--primary-100);
-  border: 2px solid var(--primary-300);
-}
-.infoCard .Rating_year {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.Card:hover .infoCard {
-  display: inline;
-} */
-
 .Card {
   background-color: var(--background-300);
   width: 230px;
   height: 345px;
   border-radius: 5px;
   cursor: pointer;
-  position: relative; /* Make Card the positioning reference */
-  overflow: hidden; /* Ensure contents don’t overflow out of the card */
+  position: relative;
+  overflow: hidden;
 }
 
 .infoCard {
   padding: 0px;
-  color: var(--text-200);
+  color: var(--text-300);
   width: 100%;
-  background-color: var(--background-200);
-  position: absolute; /* Position relative to Card */
-  bottom: 0; /* Align to the bottom of the card */
+ 
+  position: absolute; 
+  bottom: 0; 
   left: 0;
-  margin: 0; /* Reset margins */
+  margin: 0;
   z-index: 1;
-  display: block; /* Changed from none to block for animation handling */
-  opacity: 0; /* Start with opacity 0 for fade-in effect */
-  transform: translateY(10px); /* Start slightly below the position */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition settings */
+  display: block; 
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
-  background: rgba(255, 255, 255, 0.19);
-  /* border-radius: 16px; */
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .infoCard h3 {
-  padding: 3px 5px;
+  padding: 5px 5px;
   margin: 0px;
+  z-index: 1;
 }
 
-.infoCard p {
-  padding: 2px;
-  margin: 3px 10px;
-  border-radius: 10px;
+.infoCard span {
+  padding: 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
   font-weight: 700;
-  /* width: 1rem; */
-
+  font-size: 1rem;
+  color: white;
   background-color: var(--primary-100);
-  border: 2px solid var(--accent-100);
+  border: 2px solid var(--accent-300);
+  z-index: 1;
 }
 
 .infoCard .Rating_year {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
+.Card:hover  {
+  transform: scale(1.04);
+  transition: 0.4s;
+ }
+ 
 .Card:hover .infoCard {
   opacity: 1; /* Fade in to full opacity */
   transform: translateY(0); /* Slide into original position */

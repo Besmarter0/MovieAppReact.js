@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './Card.css';
 function Card({ movie }) {
   return (
@@ -8,8 +9,8 @@ function Card({ movie }) {
       <div className="infoCard">
         <h3>{movie.title}</h3>
         <div className="Rating_year">
-          <p>{movie.year}</p>
-          <p>{movie.rating}</p>
+          <span>{movie.year}</span>
+          <span>{movie.rating}</span>
         </div>
       </div>
     </div>

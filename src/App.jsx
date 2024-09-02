@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import ListMovies from './components/ListMovies/ListMovies';
 import SearchBar from './components/SearchBar/SearchBar';
 import TopMoviesCarousel from './components/TopMoviesCarousel/TopMoviesCarousel';
@@ -37,26 +37,22 @@ function App() {
   return (
     <Router>
       <Navbar />
-
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <TopMoviesCarousel />
-              <SearchBar
-                filters={filters}
-                onFilterChange={handleFilterChange}
-                onSearchClick={handleSearchClick}
-              />
-              <ListMovies filters={appliedFilters} />
-            </div>
-          }
+        <Route path="/" element={
+          <>
+            <TopMoviesCarousel />
+                <SearchBar
+                  filters={filters}
+                  onFilterChange={handleFilterChange}
+                  onSearchClick={handleSearchClick}
+                />
+                <ListMovies filters={appliedFilters} />
+          </>} 
         />
         <Route path="/movies/:movieId" element={<MovieDetail />} />
       </Routes>
     </Router>
-  );d
+  )
 }
 
 export default App;

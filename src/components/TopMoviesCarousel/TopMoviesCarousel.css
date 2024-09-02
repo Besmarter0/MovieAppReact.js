@@ -1,93 +1,13 @@
-/* .TopMoviesCarousel {
-  padding: 10px;
-  background: linear-gradient(to right, var(--background-300), #e9ecef);
-  border-radius: 5px;
-  margin: 10px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 2em;
-  color: var(--text-200);
-}
-
-.movie-card {
-  padding: 5px;
-  perspective: 1000px; 
-}
-
-.movie-card-inner {
-  transition: transform 0.4s;
-  transform-style: preserve-3d;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.movie-card-inner img {
-  width: 300px;
-  height: 400px;
- 
-  transition: all 0.3s ease-in-out;
-}
-
-.movie-card:hover .movie-card-inner {
-  transform: rotateY(10deg) scale(1.05);
-}
-
-.movie-card img {
-  width: 100%;
-
-  transition: all 0.3s ease-in-out;
-}
-
-.movie-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-
- 
-  background: rgba(240, 230, 230, 0.14);
-  border-radius: 16px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border: 1px solid rgba(240, 230, 230, 0.31);
-}
-
-.movie-card-inner:hover .movie-info {
-  opacity: 1;
-}
-
-.movie-info h3 {
-  font-size: 1.1em;
-  margin: 5px 0;
-}
-
-.movie-info p {
-  font-size: 0.9em;
-} */
-
 .TopMoviesCarousel {
-  padding: 10px;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.21);
-  /* max-width: 80%; */
-  margin: 0 auto; /* Center carousel */
+  max-width: 80%;
+  margin: 0 auto; 
 
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.06);
   /* border-radius: 16px; */
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
@@ -96,7 +16,7 @@ h2 {
 
 h2 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-size: 2em;
   color: var(--text-200);
 }
@@ -112,14 +32,12 @@ h2 {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   cursor: pointer; /* Change cursor to indicate clickability */
 }
 
 .movie-card-inner img {
   width: 250px;
   height: 350px;
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -129,7 +47,6 @@ h2 {
 
 .movie-card img {
   width: 100%;
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -138,14 +55,13 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
   color: white;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s;
-
-  border-bottom-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
   border: 1px solid rgba(255, 255, 255, 0.29);
