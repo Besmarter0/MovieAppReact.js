@@ -3,7 +3,7 @@ import './Navbar.css'; // Import the CSS file
 
 export default function Navbar() {
   return (
-    <div className="navbar-container">
+    <div className="container">
       <div className="logo-container">
         <h1 className="logo">MovieAppy</h1>
       </div>
